@@ -1,13 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>4Geeks Academy</title>
-</head>
-<body>
-<form>
-<!-- your code here -->
-</form>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>4Geeks Academy</title>
+		<style>
+			div {
+				width: 30%;
+			}
+			table,
+			th,
+			td {
+				border: 1px solid #a6a6a6;
+			}
+			th {
+				background-color: #9ac0e6;
+			}
+			select {
+				background-color: white;
+				width: 30%;
+			}
+			#button {
+				margin: auto;
+				display: block;
+			}
+			#text {
+				width: 95%;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<div>
+				<table>
+					<tr>
+						<th>Name</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td><label for="name">Name</label></td>
+						<td><input id="text" type="text" /></td>
+					</tr>
+					<tr>
+						<td><label for="sex">Sex</label></td>
+						<td>
+							<input type="radio" id="male" name="sex" value="Male" />
+							<label for="male">Male</label>
+							<input type="radio" id="female" name="sex" value="Female" />
+							<label for="female">Female</label>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="eye_color">Eye color</label></td>
+						<td>
+							<select name="eye_color">
+								<option selected="selected" value="green">green</option>
+								<option value="black">black</option>
+								<option value="blue">blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="height_weight">Check all that apply</label></td>
+						<td>
+							<input type="checkbox" id="tall" name="tall" />
+							<label for="tall">"Over 6 feet tall"</label><br />
+							<input type="checkbox" id="fat" name="fat" />
+							<label for="fat">"Over 200 pounds"</label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><label for="ability">Describe your athletic</label></td>
+					</tr>
+					<tr>
+						<td colspan="2"><textarea name="ability" id="ability" cols="50" rows="5"></textarea></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input id="button" type="submit" value="Enter my information" /></td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</body>
 </html>
