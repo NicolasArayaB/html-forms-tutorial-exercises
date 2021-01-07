@@ -25,7 +25,7 @@ input, button{
 input {
     background-color: #000d33;
     border: transparent;
-    
+    padding-left: 10px;
 }
 
 button {
